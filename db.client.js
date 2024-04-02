@@ -7,7 +7,7 @@ const sequelize = new Sequelize(
   '', // User
   '', // Password
   {
-    host: '', // Host
+    host: 'dpg-co5te1cf7o1s73a79g0g-a', // Host
     dialect: 'postgres',
     dialectOptions: {
       ssl: {
