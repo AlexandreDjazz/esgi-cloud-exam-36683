@@ -3,13 +3,22 @@ const { Sequelize } = require('sequelize')
 // database
 const sequelize = new Sequelize(
   'postgres://fakeurl', // TODO
+  '', // Database name
+  '', // User
+  '', // Password
   {
+    host: '', // Host
+    dialect: 'postgres',
     dialectOptions: {
       ssl: {
         require: true,
         rejectUnauthorized: false,
       },
     },
+    define: {
+      createdAt: 'added',
+      updatedAt: 'updated',
+    }
   },
 );
 
